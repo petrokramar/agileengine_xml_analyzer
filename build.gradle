@@ -1,9 +1,20 @@
-group 'com.agileengine'
-version '0.0.1'
+group 'com.agileengine.test'
+version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
+
+jar {
+    baseName = "html-parser"
+    manifest {
+        attributes "Main-Class": "com.agileengine.test.App"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
 
 repositories {
     mavenCentral()
