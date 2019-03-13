@@ -1,5 +1,10 @@
-# AgileEngine backend-XML java snippets
+# AgileAnalyzer
+Test task for AgileEngine.
 
-It is built on top of [Jsoup](https://jsoup.org/).
+ #### How to run the program
 
-You can use Jsoup for your solution or apply any other convenient library. 
+Executed jar file and test samples are stored in /sample directory
+
+To start application use the following console command:
+  
+```java -jar App.jar <path_to_the_origin_html_file>> <path_to_the_sample_html_file> <target_elememt_id>```
